@@ -8,7 +8,7 @@ const app = {
 const onFormSubmit = (e) => {
   e.preventDefault();
   console.log(app);
-  const option = e.target.elements.option.value;
+  const option = e.target.elements.option.value.trim();
   if (option) {
     app.options.push(option);
     renderApp();
